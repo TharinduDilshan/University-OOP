@@ -1,1 +1,1 @@
-# University-OOP
+# University (Java OOP Program)
