@@ -9,6 +9,7 @@ public class Module {
     private String moduleId; // ID for the module
     private String moduleName; // Name of the module
     private Lecturer moduleLeader; // Owner of the module
+    private List<Student> enrolledStudents;
 
     public String getModuleId() {
         return moduleId;
@@ -35,6 +36,14 @@ public class Module {
         this.moduleId = moduleId;
         this.moduleName = moduleName;
         this.moduleLeader = moduleLeader;
+    }
+
+    public List<Student> getEnrolledStudents() {
+        return enrolledStudents;
+    }
+
+    public void setEnrolledStudents(List<Student> studentList) {
+        this.enrolledStudents = studentList;
     }
 
 }
