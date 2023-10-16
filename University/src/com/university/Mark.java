@@ -7,6 +7,7 @@ public class Mark {
 
     private String moduleId; // ID for the module
     private String moduleName; // Name for the module
+    private String studentId;
     private String studentName; // Name of the student
     private double cw; // cw mark
     private double exam; //exam mark
@@ -69,6 +70,13 @@ public class Mark {
         this.feedback = feedback;
     }
 
+    public String getStudentId() {
+        return studentId;
+    }
+
+    public void setStudentId(String studentId) {
+        this.studentId = studentId;
+    }
 
     public Mark(String moduleId, String moduleName,String studentName,double cw,double exam){
         this.moduleId = moduleId;
@@ -76,8 +84,6 @@ public class Mark {
         this.studentName = studentName;
         this.cw = cw;
         this.exam = exam;
-
-
     }
 
     public Mark(String moduleId, String moduleName,String studentName,double cw,double exam,double average){
@@ -87,14 +93,6 @@ public class Mark {
         this.cw = cw;
         this.exam = exam;
         this.average = average;
-
     }
-
-
-
-
-
-
-
-
+    
 }
