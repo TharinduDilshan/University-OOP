@@ -11,7 +11,7 @@ public class Mark {
     private double cw; // cw mark
     private double exam; //exam mark
     private double average;
-
+    private String feedback;
 
     public String getModuleId() {
         return moduleId;
@@ -61,7 +61,13 @@ public class Mark {
         this.average = average;
     }
 
+    public String getFeedback() {
+        return feedback;
+    }
 
+    public void setFeedback(String feedback) {
+        this.feedback = feedback;
+    }
 
 
     public Mark(String moduleId, String moduleName,String studentName,double cw,double exam){
